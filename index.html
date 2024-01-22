@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ProgramaYa!</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+
+
+        }
+
+        .container {
+            padding-bottom: 60px;
+            max-width: 1000px;
+            margin: auto;
+            width: 90%;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: rgb(245, 245, 245);
+            padding-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+            position: fixed;
+            width: 100%;
+
+        }
+        nav{
+            text-align: right;
+            padding-top: 28px;
+            padding-right: 30px;
+            
+        }
+        nav>a{
+            padding-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        nav>a:hover{
+            color:blueviolet;
+        }
+
+        .header-h2{
+            text-align: left;
+            padding-top: 20px;
+            padding-left: 20px;
+            color: blueviolet;
+            font-size: 27px;
+
+        }
+        .section-imagen{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            height: 90vh;
+            background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ) ,url(img/hero.jpg);
+            color: #ffff;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .section-imagen>h1{
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .section-imagen>button{
+            font-size: 40px;
+            margin-top: 50px;
+            
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>INICIO</h1>
+    <header>
+        <h2 class="header-h2">ProgramaYa!</h2>
+        <nav>
+            <a href="#">Quienes Somos</a>
+            <a href="#">Nuestros Programas</a>
+            <a href="#">Carácteristicas</a>
+        </nav>
+    </header>
+    <section class="section-imagen">
+        <h1>Aprende a programar <br>con los mejores</h1>
+        <button class="button-class">APLICA YÁ!</button>
+    </section>
+    <main>
+        <section class="container">
+            <div class="quienes-somos">
+                <img src="img/somos-proya.jpg" alt="imagen1" style="overflow: hidden";>
+                <div class="quienes-somos-texto">
+                    <h2>Somos <span>Programa Ya!</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem sed
+                        dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur laborum
+                        accusamus, perspiciatis odio nemo minus vel!</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="container">
+            <div class="cards">
+                <div class="card">
+                    <h3>Programador <br>Front-end</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe
+                        qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia
+                        ducimus veritatis repellendus?</p>
+                    <button>
+                        <h3>+ Info</h3>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h3>Programador <br>Fll stack</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe
+                        qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia
+                        ducimus veritatis repellendus?</p>
+                    <button>
+                        <h3>+ Info</h3>
+                    </button>
+                </div>
+
+                <div class="card">
+                    <h3>Programador <br>Python</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero corporis incidunt saepe
+                        qui commodi quasi neque veniam quam, aspernatur est beatae maxime animi sed reiciendis mollitia
+                        ducimus veritatis repellendus?</p>
+                    <button>
+                        <h3>+ Info</h3>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section-datos">
+                <div class="section-letras">
+                    <ul>
+                        <li>✔️ 100% online</li>
+                        <li>✔️ Flexibilidad de horarios</li>
+                        <li>✔️ Soporte 1:1</li>
+                        <li>✔️ Asistencia financiera</li>
+                    </ul>
+                </div>
+                <img src="img/background-2.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="listo-programar">
+                <h2>Listo Para Programar?</h2>
+                <button>Aplica Ya!</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;ProgramaYa 2024</p>
+    </footer>
 </body>
+
 </html>
