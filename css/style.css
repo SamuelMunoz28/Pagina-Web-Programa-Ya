@@ -1,1 +1,429 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 60px 0;
+    max-width: 1000px;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+
+}
+
+nav {
+    text-align: right;
+    padding-top: 28px;
+    padding-right: 30px;
+
+}
+
+nav>a {
+    padding-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav>a:hover {
+    color: blueviolet;
+}
+
+.header-h2 {
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: blueviolet;
+    font-size: 27px;
+
+}
+
+.section-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+    color: #ffff;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+.section-imagen>h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.button-class {
+    padding: 7px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: blueviolet;
+}
+
+.button-class:hover {
+    background-color: orangered;
+}
+
+.quienes-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 90vh;
+    gap: 70px;
+}
+
+.quienes-somos-texto p {
+    width: 100%;
+    text-align: justify;
+
+}
+
+.quienes-somos-texto>h2 {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.spaan {
+    color: blueviolet;
+}
+
+.quienes-somos>img {
+    width: 70%;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.quienes-somos-texto>p {
+    font-size: 20px;
+}
+
+.nuestros-programas {
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    padding: 130px 12px;
+
+}
+
+.nuestros-programas>h2 {
+    color: #ffff;
+    text-align: center;
+    font-size: 65px;
+    padding-bottom: 60px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    color: #ffff;
+    background-size: 100% 150px;
+    padding: 50px 0px;
+    margin: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.card:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/front-end-cropped.jpg");
+
+    background-repeat: no-repeat;
+
+}
+.card:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/full-stack-cropped.jpg");
+
+    background-repeat: no-repeat;
+
+}
+.card:last-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/python-cropped.jpg");
+
+    background-repeat: no-repeat;
+
+}
+
+.card>h3 {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 40px;
+    padding-right: 20PX;
+}
+
+.card>p {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.card>button {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+    margin: 25px 0 0 130px;
+}
+.section-datos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-datos>img{
+    width: 50%;
+    height: 100%;
+    
+}
+.section-letras{
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: 10px 10px;
+}
+.section-letras li{
+    padding-bottom: 8px;
+}
+.listo-programar-section{
+    background-color: rgb(30, 30, 30);
+    color: #ffff;
+    width: 100%;
+    height: 70vh;
+
+}
+.listo-programar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 170px;
+    
+}
+
+.listo-programar h2{
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 40px;
+}
+.listo-programar button{
+    background-color: blueviolet;
+    color: #ffff;
+    font-size: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+}
+.listo-programar button:hover{
+    background-color: #eb5611;
+}
+footer{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    font-size: 30px;
+    
+    
+}
+footer p{
+    color: #523931;
+}
+
+@media (max-width:984px){
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom:0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 0 0;
+    }
+    nav>a{
+        padding-bottom: 5px;
+    }
+    .header-h2{
+        text-align: center;
+        padding: 4px 0 0 0;
+        padding-left: 25px;
+    }
+    .section-imagen{
+        padding-top: 70px;
+        
+    }
+    .section-imagen>h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.button-class {
+    font-size: 20px;
+}
+.quienes-somos{
+    height: 30vh;
+}
+.quienes-somos>img{
+    overflow: hidden;
+    object-fit: none;
+    width: 0%;
+    
+}
+.quienes-somos-texto>h2{
+    text-align: center;
+    font-size: 40px;
+}
+.quienes-somos-texto>p{
+    font-size: 20px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 210px;
+    
+}
+.card>p{
+    overflow: hidden;
+}
+.card>button{
+    margin: auto;
+    
+    
+}
+.nuestros-programas>h2{
+    font-size: 40px;
+}
+.card>h3{
+    font-size: 30px;
+}
+.listo-programar h2{
+    font-size: 50px;
+}
+.listo-programar button{
+    font-size:19px;
+}
+@media (max-width:500px){
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+    }
+   
+    .section-imagen>h1{
+        font-size: 40px;
+    }
+
+.button-class {
+    font-size: 20px;
+}
+.quienes-somos{
+    margin-left: 0;
+    padding-right: 39px;
+    height: 20vh;
+}
+
+.quienes-somos-texto>h2{
+    text-align: center;
+    font-size: 30px;
+}
+.quienes-somos-texto>p{
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.nuestros-programas>h2{
+    font-size:30px;
+    
+}
+.cards{
+    width: 100%;
+}
+.card>h3{
+    font-size:20px;
+    text-align: center;
+}
+.listo-programar h2{
+    font-size: 50px;
+}
+.section-datos{
+    width: 25%;
+    margin: auto;
+    
+}
+.section-datos>img{
+    overflow: hidden;
+}
+.section-letras li{
+    font-size: 20px;
+    text-align: justify;
+}
+}
+}
